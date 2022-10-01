@@ -1,4 +1,5 @@
 import { Avatar, Box, Divider, Typography } from '@mui/material';
+import { Component } from 'react';
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
       >
         <Avatar>N</Avatar>
         <Typography variant='h6' sx={{ display: 'inline', fontWeight: '800' }}>
-          Latest Tweets
+          {'Latest Tweets'}
         </Typography>
       </Box>
       <Divider />

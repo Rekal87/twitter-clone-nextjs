@@ -1,7 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import useSWR from 'swr';
+import { CircularProgress } from '@mui/material';
 
 export default function Home() {
+  const { data } = useSWR('/api/tweets');
+
+  if (!data) return <CircularProgress />;
+
   return (
     <>
       <Head>
