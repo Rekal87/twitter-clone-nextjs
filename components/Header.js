@@ -7,13 +7,14 @@ function Header() {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          px: '4px',
-          py: '3px',
-          m: '4px',
+          px: '1rem',
+          py: '0.75rem',
         }}
       >
         <Avatar>N</Avatar>
-        <Typography variant='caption'>Latest Tweets</Typography>
+        <Typography variant='h6' sx={{ display: 'inline', fontWeight: '800' }}>
+          Latest Tweets
+        </Typography>
       </Box>
       <Divider />
     </div>
